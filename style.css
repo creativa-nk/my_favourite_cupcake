@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+::-webkit-scrollbar {display: none;}
+
+.contenedor_general{
+    /* background: yellowgreen; */
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+.cupcake_contenedor{
+    /* background: tomato; */
+    width: 450px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.crema_cupcake{
+    /* background: rgba(64, 224, 208, 0.446); */
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+   /*  filter: drop-shadow( 0 0 10px   rgba(0, 0, 0, 0.2)); */
+   /*  background-image: url('./img/cmema_avellanasYginda.png');
+    background-size: 100%; */
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.base_cupcake{
+    /* background: burlywood; */
+    position: absolute;
+    top: 20px;
+    z-index: 0;
+ /*    filter: drop-shadow( 0 0 10px   rgba(0, 0, 0, 0.2));
+    background-image: url('./img/base_cupcake_amarillo.png');
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.reflejo {
+    animation: reflection 2.5s infinite alternate;
+    width:150px;
+    height: 3%;
+    position: absolute;
+    top: 340px;
+    background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgb(114, 114, 114));
+    z-index: 1;
+    filter: blur(0.5rem);
+    border-radius: 50%;
+  }
+.controles{
+    /* background: violet; */
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    overflow: hidden;/* !!!!!!!! */
+}
+
+.control img{
+    width: 15%;
+    margin-left: 15px;
+}
+.control{
+    width: 200vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.topping{
+    /* background: orange; */
+    position: absolute; 
+    z-index: 5; 
+    top: 0px;
+    left: 0px; 
+    overflow: auto;/* !!!!!! */
+    overflow-y: hidden;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.topping img{
+    width: 120px;
+    margin-top: 110px;
+    margin-left: -10px;
+}
+
+.cremas{
+    /* background: darkcyan; */
+    position: absolute; 
+    z-index: 5; 
+    top: 60px;
+    left: 0px; 
+    overflow: auto;/* !!!!!! */
+    overflow-y: hidden;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.cremas img{
+    width: 100px;
+    margin-top: 39px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bases{
+    /* background-color: cornflowerblue; */
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0px; 
+    overflow: auto;/* !!!!!! */
+    overflow-y: hidden;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.bases img{
+    width: 100px; 
+    margin-bottom:70px ;
+    margin-left: 10px;
+}
