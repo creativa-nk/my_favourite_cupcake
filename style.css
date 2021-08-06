@@ -31,7 +31,7 @@ body{
     justify-content: center; */
 }
 .cupcake_contenedor{
-    background: tomato;
+   /*  background: tomato; */
     width: 340px;
     height: 650px;
     display: flex;
@@ -87,7 +87,7 @@ body{
     border-radius: 50%;
   }
 .controles{
-    background: rgba(170, 155, 170, 0.1);
+    background: rgba(255, 255, 255, 0.192);
     width: 100%;
     height: 250px;
     position: absolute;
@@ -166,7 +166,7 @@ body{
 @media only screen and  (max-width:450px){
 
     .cupcake_contenedor{
-        background: rgb(233, 172, 162);
+        background: rgba(247, 176, 165, 0.788);
         width: 100vw;
         height: 100vh;
     }
