@@ -38,10 +38,10 @@ body{
     justify-content: center;
 }
 .cupcake_contenedor img{
-    object-fit: cover;
+    object-fit: contain;
 }
 .crema_topping{
-    background: rgba(213, 224, 64, 0.446);
+    /* background: rgba(213, 224, 64, 0.446); */
     position: absolute;
     top: 7%;
     z-index: 2;
@@ -52,7 +52,7 @@ body{
     animation: float 3s infinite alternate ;
 }
 .crema_cupcake{
-    background: rgba(64, 224, 208, 0.446);
+    /* background: rgba(64, 224, 208, 0.446); */
     position: absolute;
     top: 7%;
     z-index: 1;
