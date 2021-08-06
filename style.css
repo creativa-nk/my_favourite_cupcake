@@ -41,9 +41,9 @@ body{
     object-fit: cover;
 }
 .crema_topping{
-    /* background: rgba(213, 224, 64, 0.446); */
+    background: rgba(213, 224, 64, 0.446);
     position: absolute;
-    top: 20px;
+    top: 7%;
     z-index: 2;
     width: 200px;
     height: 300px;
@@ -52,9 +52,9 @@ body{
     animation: float 3s infinite alternate ;
 }
 .crema_cupcake{
-    /* background: rgba(64, 224, 208, 0.446); */
+    background: rgba(64, 224, 208, 0.446);
     position: absolute;
-    top: 20px;
+    top: 7%;
     z-index: 1;
     width: 200px;
     height: 300px;
@@ -67,7 +67,7 @@ body{
 .base_cupcake{
     /* background: burlywood; */
     position: absolute;
-    top: 23px;
+    top: 7%;
     z-index: 0;
     width: 200px;
     height: 300px;
@@ -92,7 +92,7 @@ body{
     height: 250px;
     position: absolute;
     z-index: 10;
-    bottom: 0;
+    bottom: 25px;
     overflow: hidden;/* !!!!!!!! */
 }
 
