@@ -16,7 +16,7 @@ body{
 
 .contenedor_general{
     /* background: yellowgreen; */
-    width: 400px;
+    width: 360px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,7 +59,7 @@ body{
 .base_cupcake{
     /* background: burlywood; */
     position: absolute;
-    top: 20px;
+    top: 23px;
     z-index: 0;
  /*    filter: drop-shadow( 0 0 10px   rgba(0, 0, 0, 0.2));
     background-image: url('./img/base_cupcake_amarillo.png');
@@ -75,14 +75,14 @@ body{
     width:150px;
     height: 3%;
     position: absolute;
-    top: 340px;
+    top: 320px;
     background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgb(114, 114, 114));
     z-index: 1;
     filter: blur(0.5rem);
     border-radius: 50%;
   }
 .controles{
-    /* background: violet; */
+    background: rgba(170, 155, 170, 0.1);
     width: 100%;
     height: 250px;
     position: absolute;
@@ -93,10 +93,10 @@ body{
 
 .control img{
     width: 15%;
-    margin-left: 15px;
+    margin-left: 55px;
 }
 .control{
-    width: 200vw;
+    width: 300vw;
     height: 150px;
     display: flex;
     align-items: center;
