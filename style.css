@@ -1,3 +1,7 @@
+/*------- animaciones------ */
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +28,16 @@ body{
     /* background: tomato; */
     width: 450px;
     height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.crema_topping{
+    /* background: rgba(213, 224, 64, 0.446); */
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    width: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
 }
@@ -88,7 +102,7 @@ body{
     align-items: center;
 }
 .topping{
-    /* background: orange; */
+   /*  background: orange; */
     position: absolute; 
     z-index: 5; 
     top: 0px;

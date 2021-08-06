@@ -1,11 +1,8 @@
 
-/* const lightbox = document.createElement('div')
-lightbox.id = 'lightbox'
-document.body.appendChild(lightbox) */
 
 let lightbox1 = document.querySelector('.crema_cupcake')
 
-const images = document.querySelectorAll('img')
+const images = document.querySelectorAll('.cremas img')
 images.forEach(image => {
   image.addEventListener('click', e => {
     const img = document.createElement('img')
@@ -17,10 +14,8 @@ images.forEach(image => {
   })
 })
 
-/* lightbox.addEventListener('click', e => {
-  if (e.target !== e.currentTarget) return
-  lightbox.classList.remove('active')
-}) */
+
+
 
 let lightbox2 = document.querySelector('.base_cupcake')
 
@@ -35,3 +30,20 @@ images2.forEach(image => {
     lightbox2.appendChild(img)
   })
 })
+
+
+
+let lightbox3 = document.querySelector('.crema_topping')
+
+const images3 = document.querySelectorAll('.topping img')
+images3.forEach(image => {
+  image.addEventListener('click', e => {
+    const img = document.createElement('img')
+    img.src = image.src
+    while (lightbox3.firstChild) {
+        lightbox3.removeChild(lightbox3.firstChild)
+      }
+    lightbox3.appendChild(img)
+  })
+})
+
