@@ -1,5 +1,12 @@
 /*------- animaciones------ */
-
+@keyframes float{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
 
 
 *{
@@ -16,8 +23,7 @@ body{
 
 .contenedor_general{
     /* background: yellowgreen; */
- /*    width: 360px; */
-    position: absolute;
+     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -25,11 +31,14 @@ body{
     justify-content: center; */
 }
 .cupcake_contenedor{
-    /* background: tomato; */
+    background: tomato;
     width: 340px;
-    height: 600px;
+    height: 650px;
     display: flex;
     justify-content: center;
+}
+.cupcake_contenedor img{
+    object-fit: cover;
 }
 .crema_topping{
     /* background: rgba(213, 224, 64, 0.446); */
@@ -40,6 +49,7 @@ body{
     height: 300px;
     display: flex;
     justify-content: center;
+    animation: float 3s infinite alternate ;
 }
 .crema_cupcake{
     /* background: rgba(64, 224, 208, 0.446); */
@@ -50,6 +60,7 @@ body{
     height: 300px;
     display: flex;
     justify-content: center;
+    animation: float 3s infinite alternate ;
 }
 
 
@@ -62,13 +73,14 @@ body{
     height: 300px;
     display: flex;
     justify-content: center;
+    animation: float 3s infinite alternate ;
 }
 .reflejo {
     animation: reflection 2.5s infinite alternate;
     width:150px;
     height: 3%;
     position: absolute;
-    top: 320px;
+    top: 350px;
     background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgb(114, 114, 114));
     z-index: 1;
     filter: blur(0.5rem);
@@ -148,4 +160,14 @@ body{
     width: 100px; 
     margin-bottom:70px ;
     margin-left: 10px;
+}
+
+
+@media only screen and  (max-width:450px){
+
+    .cupcake_contenedor{
+        background: rgb(233, 172, 162);
+        width: 100vw;
+        height: 100vh;
+    }
 }
