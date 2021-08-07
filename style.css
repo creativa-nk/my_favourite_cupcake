@@ -20,37 +20,37 @@
 
 @keyframes fondo{
     0%{
-        background:rgba(255, 0, 0, 0.36) ;
+        background:rgba(255, 0, 0, 1) ;
     }
     10%{
-        background: rgba(255, 156, 0, 0.36);
+        background: rgba(255, 156, 0, 1);
     }
     20%{
-        background: rgba(253, 255, 0, 0.36);
+        background: rgba(253, 255, 0, 1);
     }
     30%{
-        background:rgba(115, 255, 0, 0.36) ;
+        background:rgba(115, 255, 0, 1) ;
     }
     40%{
-        background:rgba(0, 255, 145, 0.36) ;
+        background:rgba(0, 255, 145, 1) ;
     }
     50%{
-        background:rgba(0, 189, 255, 0.36) ;
+        background:rgba(0, 189, 255, 1) ;
     }
     60%{
-        background:rgba(0, 62, 255, 0.36) ;
+        background:rgba(0, 62, 255, 1) ;
     }
     70%{
-        background:rgba(66, 0, 255, 0.36) ;
+        background:rgba(66, 0, 255, 1) ;
     }
     80%{
-        background: rgba(166, 0, 255, 0.36);
+        background: rgba(166, 0, 255, 1);
     }
     90%{
-        background:rgba(255, 0, 232, 0.36) ;
+        background:rgba(255, 0, 232, 1) ;
     }
     100%{
-        background:rgba(255, 0, 83, 0.36) ;
+        background:rgba(255, 0, 83, 1) ;
     }
 }
 
@@ -87,6 +87,62 @@ body{
 .cupcake_contenedor img{
     object-fit: contain;
 }
+.contenedor_mordiscos{
+    position: absolute;
+    top: 7%;
+   /*!!!!!!!!!!!!!!!!!!!!!! */
+    width: 200px;
+    height: 300px;
+    animation: float 3s infinite alternate ;
+   
+}
+.mordisco{ 
+    width: 120px;
+    height: 220px;
+    position: absolute;  
+}
+.primer_mordisco{
+    /* background: red; */
+    border-radius: 0 0 70% 0;
+    height: 210px;
+    left: 50px;
+    z-index:-20 ;
+    animation:fondo 20s infinite,float 3s infinite alternate ;
+}
+.segundo_mordisco{
+    right: 0;
+    border-radius: 30% 0  0 80% ;
+    animation:fondo 20s infinite ;
+    display: none;
+}
+.tercer_mordisco{
+    left: 30px ;
+    top: 25px;
+    width: 150px;
+    border-radius: 0 0 45% 45%;
+    animation:fondo 20s infinite ;
+    display: none;
+}
+.cuarto_mordisco{
+    bottom: 0;
+    border-radius: 0 45% 60% 0; 
+    animation:fondo 20s infinite ;
+    display: none;
+}
+.quinto_mordisco{
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    width: 200px; 
+    animation:fondo 20s infinite ;
+    display: none;
+}
+.quinto_mordisco img{
+    width: 100%;
+    display: none;
+}
+
+
 .crema_topping{
     /* background: rgba(213, 224, 64, 0.446); */
     position: absolute;
@@ -99,7 +155,7 @@ body{
     animation: float 3s infinite alternate ;
 }
 .crema_cupcake{
-    /* background: rgba(64, 224, 208, 0.446); */
+   /*  background: rgba(64, 224, 208, 0.446); */
     position: absolute;
     top: 7%;
     z-index: 2;
@@ -210,6 +266,41 @@ body{
     margin-left: 10px;
 }
 
+.comer{
+    background: white;
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%); 
+    transition: transform .4s ease-in;
+}
+.show{
+    transform: translateY(0);
+}
+.btn_x{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+}
+.btn_comer{
+    width: 100px;
+    height: 100px;
+    background: grey;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 .btn{
     background: rgb(255, 255, 255);
     width: 150px;
@@ -218,15 +309,17 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
+    z-index: 10;
     bottom: 0px;
     left: 30%;
+    cursor: pointer;
 }
 
 
 @media only screen and  (max-width:450px){
 
     .cupcake_contenedor{
-        background: rgba(247, 176, 165, 0.788);
+        /* background: rgba(247, 176, 165, 0.788); */
         width: 100vw;
         height: 100vh;
     }

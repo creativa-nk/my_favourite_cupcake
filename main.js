@@ -47,3 +47,32 @@ images3.forEach(image => {
   })
 })
 
+
+/* const cupcake = document.querySelector('.cupcake_contenedor')
+const contenedor_mordiscos = document.createElement('div');
+contenedor_mordiscos.id = 'contenedor_mordiscos';
+document.body.appendChild(contenedor_mordiscos); */
+
+const btn = document.querySelector('.btn')
+const contenedor_btn = document.querySelector('.comer')
+const btn_comer = document.querySelector('.btn_comer');
+const mordiscos = document.querySelector('.primer_mordisco');
+const cerrarContenedor = document.querySelector('.btn_x');
+
+const aparecer = function(){
+  contenedor_btn.classList.toggle('show');
+}
+btn.addEventListener('click', aparecer)
+
+
+const comer = function(e) {
+      mordiscos.style.zIndex = 20;
+      document.body.style.background = 'red';  
+} 
+btn_comer.addEventListener('click', comer)
+
+
+cerrarContenedor.addEventListener('click',() =>{
+  contenedor_btn.classList.toggle('show');
+} )
+
