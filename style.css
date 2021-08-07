@@ -79,7 +79,7 @@ body{
 .cupcake_contenedor{
     background: transparent;
     width: 340px;
-    height: 650px;
+    height: 750px;
     display: flex;
     justify-content: center;
     animation: fondo 20s infinite;
@@ -140,7 +140,7 @@ body{
     height: 250px;
     position: absolute;
     z-index: 10;
-    bottom: 25px;
+    bottom: 40px;
     overflow: hidden;/* !!!!!!!! */
 }
 
@@ -208,6 +208,18 @@ body{
     width: 100px; 
     margin-bottom:70px ;
     margin-left: 10px;
+}
+
+.btn{
+    background: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
 }
 
 
