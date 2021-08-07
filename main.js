@@ -56,23 +56,34 @@ document.body.appendChild(contenedor_mordiscos); */
 const btn = document.querySelector('.btn')
 const contenedor_btn = document.querySelector('.comer')
 const btn_comer = document.querySelector('.btn_comer');
-const mordiscos = document.querySelector('.primer_mordisco');
 const cerrarContenedor = document.querySelector('.btn_x');
+const mordisco1 = document.querySelector('.primer_mordisco');
+const mordisco2 = document.querySelector('.segundo_mordisco');
 
-const aparecer = function(){
+
+
+btn.addEventListener('click', () =>{
   contenedor_btn.classList.toggle('show');
-}
-btn.addEventListener('click', aparecer)
+});
+
+cerrarContenedor.addEventListener('click',() =>{
+  contenedor_btn.classList.toggle('show');
+ /*  location.reload(); */
+} )
 
 
-const comer = function(e) {
-      mordiscos.style.zIndex = 20;
-      document.body.style.background = 'red';  
+const comer = function(i) {
+  if(i= 1){
+    mordisco1.style.zIndex = 20;
+  } else if (i=2){
+    mordisco2.style.zIndex = 20;
+  }else{
+    document.body.style.background = 'red'
+  }
+      
 } 
 btn_comer.addEventListener('click', comer)
 
 
-cerrarContenedor.addEventListener('click',() =>{
-  contenedor_btn.classList.toggle('show');
-} )
+
 
