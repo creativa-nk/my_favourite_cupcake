@@ -47,3 +47,69 @@ images3.forEach(image => {
   })
 })
 
+
+/* const cupcake = document.querySelector('.cupcake_contenedor')
+const contenedor_mordiscos = document.createElement('div');
+contenedor_mordiscos.id = 'contenedor_mordiscos';
+document.body.appendChild(contenedor_mordiscos); */
+
+const btn = document.querySelector('.btn')
+const contenedor_btn = document.querySelector('.comer')
+const btn_comer = document.querySelector('.btn_comer');
+const cerrarContenedor = document.querySelector('.btn_x');
+const mordisco1 = document.querySelector('.primer_mordisco');
+const mordisco2 = document.querySelector('.segundo_mordisco');
+const mordisco3 = document.querySelector('.tercer_mordisco');
+const mordisco4 = document.querySelector('.cuarto_mordisco');
+
+
+btn.addEventListener('click', () =>{
+  contenedor_btn.classList.toggle('show');
+});
+
+cerrarContenedor.addEventListener('click',() =>{
+  contenedor_btn.classList.toggle('show');
+  location.reload();
+} )
+
+const mostrar1 = function(){
+  mordisco1.style.opacity = 1;
+}
+const mostrar2 = function(){
+  mordisco2.style.opacity = 1;
+}
+
+
+ var contador = '0'; 
+
+const comer = function() {
+
+    if(contador == 0){
+      mordisco1.style.opacity = 1;
+       console.log('uno') 
+       contador++;
+     } else if(contador == 1){
+       mordisco2.style.opacity = 1;
+       console.log('dos')
+       contador++;
+    } else if(contador == 2){
+      mordisco3.style.opacity = 1;
+      console.log('tres')
+      contador++;
+    }else if(contador == 3){
+      mordisco4.style.opacity = 1;
+      console.log('cuatro')
+      contador++;
+    }else{
+      document.body.style.background = 'red';
+    }
+        
+  }
+
+  btn_comer.addEventListener('click', comer)
+ 
+
+
+
+
+
