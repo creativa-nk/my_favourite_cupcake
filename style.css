@@ -121,7 +121,7 @@ body{
 }
 .tercer_mordisco{
     left: 50px ;
-    top: 160px;
+    top: 180px;
     z-index:20 ;
     width: 150px;
     opacity: 0;
@@ -130,6 +130,7 @@ body{
 }
 .cuarto_mordisco{
     top: 170px;
+    width: 150px;
     right: 30px ;
     z-index:20 ;
     opacity: 0;
