@@ -106,31 +106,36 @@ body{
     border-radius: 0 0 70% 0;
     height: 210px;
     left: 50px;
-    z-index:-20 ;
+    z-index:20 ;
+    opacity: 0;
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
 .segundo_mordisco{
     /* background: crimson; */
     top: 50px;
     right: 70px;
-    z-index:-20 ;
+    z-index:20 ;
+    opacity: 0;
     border-radius: 30% 0  0 80% ;
     animation:fondo 20s infinite,float 3s infinite alternate ;
-
 }
 .tercer_mordisco{
-    left: 30px ;
-    top: 25px;
+    left: 45px ;
+    top: 150px;
+    z-index:20 ;
     width: 150px;
+    opacity: 0;
     border-radius: 0 0 45% 45%;
-    animation:fondo 20s infinite ;
-    display: none;
+    animation:fondo 20s infinite,float 3s infinite alternate ;
 }
 .cuarto_mordisco{
-    bottom: 0;
+    top: 150px;
+    right: 30px ;
+    z-index:20 ;
+    opacity: 0;
     border-radius: 0 45% 60% 0; 
-    animation:fondo 20s infinite ;
-    display: none;
+    animation:fondo 20s infinite,float 3s infinite alternate ;
+   
 }
 .quinto_mordisco{
     right: 0;
@@ -272,7 +277,7 @@ body{
 .comer{
     background: white;
     height: 300px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: 0;
     z-index: 200;
@@ -280,11 +285,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(100%); 
+    transform: translateY(200%); 
     transition: transform .4s ease-in;
+    
 }
 .show{
     transform: translateY(0);
+    
 }
 .btn_x{
     width: 50px;
