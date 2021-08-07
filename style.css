@@ -97,14 +97,14 @@ body{
    
 }
 .mordisco{ 
-    width: 150px;
+    width: 180px;
     height: 220px;
     position: absolute;  
 }
 .primer_mordisco{
     /* background: red; */
     border-radius: 0 0 70% 0;
-    height: 210px;
+    height: 220px;
     left: 50px;
     z-index:20 ;
     opacity: 0;
@@ -121,11 +121,12 @@ body{
 }
 .tercer_mordisco{
     left: 70px ;
-    top: 160px;
+    top: 130px;
+    height: 270px;
     z-index:20 ;
     width: 150px;
     opacity: 0;
-    border-radius: 0 0 45% 45%;
+    border-radius: 0 75% 0 0;
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
 .cuarto_mordisco{
