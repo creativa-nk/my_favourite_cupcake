@@ -61,6 +61,7 @@ const mordisco1 = document.querySelector('.primer_mordisco');
 const mordisco2 = document.querySelector('.segundo_mordisco');
 const mordisco3 = document.querySelector('.tercer_mordisco');
 const mordisco4 = document.querySelector('.cuarto_mordisco');
+const mordisco5 = document.querySelector('.quinto_mordisco');
 
 
 btn.addEventListener('click', () =>{
@@ -98,6 +99,10 @@ const comer = function() {
       contador++;
     }else if(contador == 3){
       mordisco4.style.opacity = 1;
+      console.log('cuatro')
+      contador++;
+    }else if(contador == 4){
+      mordisco5.style.opacity = 1;
       console.log('cuatro')
       contador++;
     }else{

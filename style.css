@@ -120,8 +120,8 @@ body{
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
 .tercer_mordisco{
-    left: 50px ;
-    top: 180px;
+    left: 70px ;
+    top: 160px;
     z-index:20 ;
     width: 150px;
     opacity: 0;
@@ -130,8 +130,8 @@ body{
 }
 .cuarto_mordisco{
     top: 170px;
-    width: 150px;
-    right: 30px ;
+    width: 180px;
+    right: 40px ;
     z-index:20 ;
     opacity: 0;
     border-radius: 0 45% 60% 0; 
@@ -139,12 +139,12 @@ body{
    
 }
 .quinto_mordisco{
-    right: 0;
-    bottom: 0;
+    top: 100px;
     height: 300px;
+    z-index: 20;
+    opacity: 1;
     width: 200px; 
     animation:fondo 20s infinite ;
-    display: none;
 }
 .quinto_mordisco img{
     width: 100%;
