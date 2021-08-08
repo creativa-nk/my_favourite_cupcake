@@ -54,6 +54,19 @@
     }
 }
 
+@keyframes cartel {
+    0%{
+        opacity: 1;
+        z-index: 200;
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        z-index: -200;
+    }
+}
+
 
 *{
     margin: 0;
@@ -67,6 +80,16 @@ body{
 }
 ::-webkit-scrollbar {display: none;}
 
+.cartel{
+    width: 340px;
+    height: 750px;
+    position: absolute;
+    z-index: -200;
+    background-image: url('./img/4696.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: cartel 7s forwards;
+}
 .contenedor_general{
     /* background: yellowgreen; */
      position: absolute;
@@ -116,7 +139,8 @@ body{
     right: 70px;
     z-index:20 ;
     opacity: 0;
-    border-radius: 30% 0  0 80% ;
+   /*  border-radius: 30% 0  0 80% ; */
+    clip-path: polygon(10% 76%, 2% 68%, 0 59%, 0 0, 100% 0, 100% 100%, 51% 100%, 40% 96%, 36% 92%, 29% 91%, 19% 85%, 15% 79%);
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
 .tercer_mordisco{
@@ -304,6 +328,8 @@ body{
     top: 10px;
     right: 0;
     cursor: pointer;
+    font-size: 1.5rem;
+    color:rgb(75, 75, 75);
 }
 .btn_comer{
     width: 100px;
@@ -311,6 +337,12 @@ body{
     background: grey;
     cursor: pointer;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 2.5rem;
+    color:rgb(75, 75, 75);
 }
 
 .btn{
