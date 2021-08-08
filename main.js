@@ -73,15 +73,8 @@ cerrarContenedor.addEventListener('click',() =>{
   location.reload();
 } )
 
-const mostrar1 = function(){
-  mordisco1.style.opacity = 1;
-}
-const mostrar2 = function(){
-  mordisco2.style.opacity = 1;
-}
 
-
- var contador = '0'; 
+var contador = '0'; 
 
 const comer = function() {
 
