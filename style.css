@@ -367,4 +367,9 @@ body{
         width: 100vw;
         height: 100vh;
     }
+
+    .cartel{
+        width: 100vw;
+        height: 100vh; 
+    }
 }
