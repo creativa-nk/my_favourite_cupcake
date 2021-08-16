@@ -124,27 +124,44 @@ body{
     height: 220px;
     position: absolute;  
 }
-.primer_mordisco{
+.mordisco::before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute; 
+    border-radius: 50%;
+    top: 140px;
+    left: 20px;
+    z-index:30 ;
     /* background: red; */
-    border-radius: 0 0 70% 0;
-    height: 220px;
-    left: 50px;
+    animation:fondo 20s infinite;
+
+}
+.primer_mordisco{
+   /*  background: red; */
+    border-radius: 50%;
+    height: 200px;
+    left: 20px;
     z-index:20 ;
     opacity: 0;
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
+
 .segundo_mordisco{
-    /* background: crimson; */
+  /*   background: crimson; */
     top: 50px;
     right: 70px;
-    z-index:20 ;
+    z-index:21 ;
     opacity: 0;
-   /*  border-radius: 30% 0  0 80% ; */
-    clip-path: polygon(10% 76%, 2% 68%, 0 59%, 0 0, 100% 0, 100% 100%, 51% 100%, 40% 96%, 36% 92%, 29% 91%, 19% 85%, 15% 79%);
+    border-radius: 0  0 0 90% ;
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
+.segundo_mordisco::before{
+    top: 120px;
+}
 .tercer_mordisco{
-    left: 70px ;
+   /*  background-color: darkblue; */
+    left: 20px ;
     top: 130px;
     height: 270px;
     z-index:20 ;
@@ -152,6 +169,11 @@ body{
     opacity: 0;
     border-radius: 0 75% 0 0;
     animation:fondo 20s infinite,float 3s infinite alternate ;
+}
+.tercer_mordisco::before{
+    border-radius: 50%;
+    left: 70px;
+    top: 100px;
 }
 .cuarto_mordisco{
     top: 170px;
