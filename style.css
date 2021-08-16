@@ -141,27 +141,27 @@ body{
    /*  background: red; */
     border-radius: 50%;
     height: 200px;
-    left: 20px;
+    left: 50px;
     z-index:20 ;
     opacity: 0;
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
 
 .segundo_mordisco{
-  /*   background: crimson; */
+    /* background: crimson; */
     top: 50px;
-    right: 70px;
+    right: 90px;
     z-index:21 ;
     opacity: 0;
     border-radius: 0  0 0 90% ;
     animation:fondo 20s infinite,float 3s infinite alternate ;
 }
 .segundo_mordisco::before{
-    top: 120px;
+    top: 100px;
 }
 .tercer_mordisco{
    /*  background-color: darkblue; */
-    left: 20px ;
+    left: 50px ;
     top: 130px;
     height: 270px;
     z-index:20 ;
@@ -188,14 +188,14 @@ body{
 .quinto_mordisco{
     top: 100px;
     height: 300px;
-    z-index: 20;
+    z-index: 21;
     opacity: 0;
     width: 200px; 
-    animation:fondo 20s infinite ;
+   /*  animation:fondo 20s infinite ; */
 }
 .quinto_mordisco img{
     width: 100%;
-    display: none;
+
 }
 
 
@@ -366,6 +366,13 @@ body{
     font-size: 2.5rem;
     color:rgb(75, 75, 75);
 }
+/* .btn_comer::after{
+    content:'\f067';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 5rem;
+    color: chartreuse;
+} */
 
 .btn{
     background: rgb(255, 255, 255);

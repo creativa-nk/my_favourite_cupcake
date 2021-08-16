@@ -90,16 +90,11 @@ const comer = function() {
       mordisco3.style.opacity = 1;
       console.log('tres')
       contador++;
-    }else if(contador == 3){
+    }else{
       mordisco4.style.opacity = 1;
-      console.log('cuatro')
-      contador++;
-    }else if(contador == 4){
       mordisco5.style.opacity = 1;
       console.log('cuatro')
       contador++;
-    }else{
-      document.body.style.background = 'red';
     }
         
   }
