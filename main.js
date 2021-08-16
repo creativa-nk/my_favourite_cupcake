@@ -53,8 +53,9 @@ const contenedor_mordiscos = document.createElement('div');
 contenedor_mordiscos.id = 'contenedor_mordiscos';
 document.body.appendChild(contenedor_mordiscos); */
 
-const btn = document.querySelector('.btn')
-const contenedor_btn = document.querySelector('.comer')
+const btn = document.querySelector('.btn');
+const contenedor_btn = document.querySelector('.comer');
+const btn_mas = document.querySelector(".btn_mas");
 const btn_comer = document.querySelector('.btn_comer');
 const cerrarContenedor = document.querySelector('.btn_x');
 const mordisco1 = document.querySelector('.primer_mordisco');
@@ -71,7 +72,11 @@ btn.addEventListener('click', () =>{
 cerrarContenedor.addEventListener('click',() =>{
   contenedor_btn.classList.toggle('show');
   location.reload();
-} )
+} );
+
+btn_mas.addEventListener('click', () =>{
+  location.reload();
+})
 
 
 var contador = '0'; 
@@ -93,7 +98,8 @@ const comer = function() {
     }else{
       mordisco4.style.opacity = 1;
       mordisco5.style.opacity = 1;
-      btn_comer.classList.add('active');
+      btn_mas.style.opacity = 1;
+      btn_mas.style.zIndex = 20;
       console.log('cuatro')
       contador++;
     }

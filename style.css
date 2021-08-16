@@ -353,7 +353,7 @@ body{
     font-size: 1.5rem;
     color:rgb(75, 75, 75);
 }
-.btn_comer, .btn_comer::after{
+.btn_comer,.btn_mas{
     width: 100px;
     height: 100px;
     background: grey;
@@ -363,18 +363,33 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
+    z-index: 20;
     font-size: 2.5rem;
     color:rgb(75, 75, 75);
 }
-.btn_comer.active{
+
+.btn_mas{
+   z-index:19 ;
+   color: white;
+   opacity: 0;
+   background: rgb(199, 199, 199);
+}
+/* .btn_comer::after.active{
+   content: '\f2e5';
+   font-family: "Font Awesome 5 Free";
+   z-index: 20;
+   font-weight: 900;
+   font-size: 2rem;
+}
+.btn_comer::after{
     background: red;
     content:'\f067';
     font-family: "Font Awesome 5 Free";
-    z-index: 20;
+    z-index: 21;
     font-weight: 900;
     font-size: 2rem;
     color: rgb(255, 255, 255);
-}
+} */
 
 .btn{
     background: rgb(255, 255, 255);
