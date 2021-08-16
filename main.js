@@ -93,6 +93,7 @@ const comer = function() {
     }else{
       mordisco4.style.opacity = 1;
       mordisco5.style.opacity = 1;
+      btn_comer.classList.add('active');
       console.log('cuatro')
       contador++;
     }
