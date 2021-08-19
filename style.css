@@ -378,15 +378,16 @@ body{
 
 .btn_mas{
    z-index:19 ;
-   color: white;
+   color: rgb(131, 129, 131);
    opacity: 0;
    font-size: 2rem;
-   background: rgb(199, 199, 199);
+   background: transparent;
+   animation: fondo 20s infinite;
 }
 
 .btn{
     background: rgb(255, 255, 255);
-    width: 150px;
+    width: 170px;
     height: 40px;
     border-radius: 3px;
     display: flex;
@@ -400,6 +401,23 @@ body{
     font-family: 'WindSong', cursive;
     font-size: 1.4rem;
     letter-spacing: 4px;
+    word-spacing: 7px;
+}
+
+/* Animacion boton 'Eat me' */
+span {
+    animation: glow-in 4s  infinite;
+  }
+
+
+@keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+ 
+  to {
+    opacity: 1;
+  }
 }
 
 
