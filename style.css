@@ -378,7 +378,7 @@ body{
 
 .btn_mas{
    z-index:19 ;
-   color: rgb(131, 129, 131);
+   color: white;
    opacity: 0;
    font-size: 2rem;
    background: transparent;
@@ -406,7 +406,7 @@ body{
 
 /* Animacion boton 'Eat me' */
 span {
-    animation: glow-in 4s  infinite;
+    animation: glow-in 3s  infinite;
   }
 
 
